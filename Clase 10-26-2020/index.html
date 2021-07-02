@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mi primer sitio Web con javascript</title>
+
+    <script>
+        function guachupita() {
+            document.getElementById("aqui").innerHTML = "Éste sitio Web fue creado por Ismael González";
+        }
+    </script>
+
+</head>
+<body>
+    <h1>
+        Bienvenidos a mi sitio Web
+    </h1>
+    <p>Espero que sea de su agrado.</p>
+    <p id="aqui"></p>
+    <script>
+        function advertencia() {
+            window.alert("Éste sitio Web está protegido por Ismael González y su perro guardián.");
+        }
+    </script>
+    <button type="button" onclick="guachupita()">Presione aquí</button>
+    <button type="button" onclick="sobreescribir()">Presione para reemplazar todo el sitio Web</button>
+    <button type="button" onclick="advertencia()">Presione para la advertencia</button>
+<script>
+    function sobreescribir() {
+        var KIKI = 2 / 3;
+        document.write(KIKI);
+    }
+</script>
+</body>
+</html>

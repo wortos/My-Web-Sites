@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Ismael González-->
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link type="text/css" rel="stylesheet" href="./estilo/formato.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //código de javascript
+            //alert("Hola");
+            $("p").click(function () {
+                $(this).css("color", "red");
+                //alert("Se cambió el color del párrafo.");
+            })
+            $("h1").click(function () {
+                $("p").fadeOut(1000);
+            })
+            $("#aparecer").click(function () {
+                $("p").fadeIn(2000);
+            })
+            $("#ambos").click(function () {
+                $("p").fadeToggle(1000);
+            })
+            $("#mostrar").click(function () {
+                $("ul, li").show();
+            })
+            $("#anadir").click(function () {
+                var nombre = prompt("Escriba el nombre");
+                $("ul").before("<p>" + nombre + "<p>");
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi primer sitio Web con jQuery</h1>
+    </header>
+    <p>Primer párrafo.</p>
+    <p>Segundo párrafo.</p>
+    <p>Tercer párrafo.</p>
+    <br />
+    
+    <button type="button" id="aparecer">Para que aparezcan los párrafos</button>
+    <br /><br />
+    <button type="button" id="ambos">Para hacer ambas funciones</button>
+
+    <br /><hr /><br />
+    <h2>Asistieron el día de hoy</h2>
+    <ul>
+        <li>Ismael</li>
+        <li>Jorge</li>
+    </ul>
+    <br />
+    <button type="button" id="mostrar">Para ver quién asitió</button>
+    <br />
+    <br />
+    <button type="button" id="anadir">Para añadir más asistentes</button>
+
+</body>
+</html>

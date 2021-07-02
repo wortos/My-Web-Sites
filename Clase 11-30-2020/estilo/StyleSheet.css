@@ -1,0 +1,35 @@
+﻿body {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px;
+    background-color: #4BEB91;
+    color: #9E1E13;
+}
+footer {
+    text-align: center;
+    background-color: #42F6F6;
+    color: #9E5023;
+    border-radius: 5px;
+    clear: both;
+}
+section {
+    width: 68%;
+    float: left;
+    background-color: #28B8B8;
+    min-height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: #94EEBB;
+    min-height: 200px;
+    border-radius: 5px;
+}
+article{
+    background-color: white;
+    padding: 3px;
+    margin: 5px;
+}

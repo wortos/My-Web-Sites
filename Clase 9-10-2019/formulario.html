@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularios</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="array.html">Arrays</a>
+        | <a href="formulario.html">Formularios</a> |
+    </nav>
+    <article>
+        <h1>formularios</h1>
+        <h3>Primer formulario para mostrar cómo capturar datos entrados por el usuario.</h3>
+        <form>
+            <label>Escriba su nombre:</label>
+            <input type="text" id="nombre" />
+        </form>
+
+        <script>
+            function alerta() {
+                var name = document.getElementById("nombre").value;
+                alert("¡Saludos " + name + "!");
+            }
+
+        </script>
+        <button type="button" onclick="alerta()">Presione aquí</button>
+        <br /><hr /><br />
+        <h3>Segundo formulario es para mostrar cómo añdir datos a un array</h3>
+        <script>
+            var guachupita = [12, 23, 34, 45, 56, 67, 78, 89];
+            document.write(guachupita.join(", "));
+            function empujar() {
+                var otro = document.getElementById("dato").value;
+                guachupita.push(otro);
+                document.getElementById("muestra").innerHTML = guachupita.join(", ");
+            }
+        </script>
+        <form>
+            <label>Escriba otro dato para el array:</label>
+            <input type="number" id="dato" />
+        </form>
+        <button type="button" onclick="empujar()">Presione aquí</button>
+        <p id="muestra"></p>
+    </article>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>
+            Copyright
+            <script>
+            var fecha = new Date().getFullYear();
+            document.write(fecha);
+            </script>
+        </p>
+    </footer>
+</body>
+</html>

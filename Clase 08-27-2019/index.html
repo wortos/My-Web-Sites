@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a> 
+        | <a href="variables.html">Variables</a> 
+        | <a href="funciones.html">Funciones</a> 
+        |
+    </nav>
+    <section>
+        <h1>Bienvenidos a mi sitio Web</h1>
+        <p>Debajo verá cómo se despliegan datos utilizando JavaScript.</p>
+        <p id="guachupita"></p>
+        <script>
+            document.write('<p>Éste texto fue escrito con un document.write de Javascript.</p>')
+        </script>
+        <button type="button" onclick="document.write('Esta oración fue publicada luego.')">Presione aquí</button>
+        <br />
+        <button type="button" onclick="document.getElementById('guachupita').innerHTML = 'Esto se publicará en un lugar en particular.'">Presione éste botón</button>
+        <br />
+        <button type="button" onclick="window.alert('Esto es una alerta')">Presione para ver una alerta</button>
+    </section>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González @2019</p>
+    </footer>
+</body>
+</html>

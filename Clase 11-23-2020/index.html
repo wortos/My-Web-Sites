@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--Ismael González
+        Profesor
+        PROG2390L
+        11-23-2020-->
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link href="./css/estilo.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Bienvenido a mi sitio Web</h1>
+    <br /><hr /><br />
+    
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_tbz2"></div>
+
+    <p>Primer párrafo.</p>
+    <p>Mi segundo párrafo</p>
+    <p>Mi tercer y último párrafo</p>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                //$(this).css("color", "black");
+                //alert("Usted ha hecho click en el párrafo");
+                $(this).fadeOut(4000);
+            });
+            $("#mostrar").click(function () {
+                //alert("Se le dio click al botón");
+                $("p").fadeToggle();
+            });
+            $(".anadir").click(function () {
+                //alert("Le dio click al botón de añadir");
+                var nombre = prompt("Escriba su nombre:");
+                //alert(nombre);
+                $("ul").append("<li>" + nombre + "</li>");
+            });
+        });
+    </script>
+    <button type="button" id="mostrar">Devolver los párrafos</button>
+    <br /><hr /><br />
+    <h1>Listado sin enumerar</h1>
+    <ul>
+        <li>Ismael</li>
+        <li>David</li>
+        <li>Luis</li>
+    </ul>
+    <button type="button" class="anadir">Añadir datos al listado</button>
+    <br /><hr /><br />
+    <table border="1">
+        <tr>
+            <th>Nombre</th><th>Apellido</th>
+        </tr>
+    </table>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53bf365c2219da7d"></script>
+
+</body>
+</html>

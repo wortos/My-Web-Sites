@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="primero"></p>
+    <p id="segundo"></p>
+    <p id="tercero"></p>
+    <script>
+    var texto = "";
+    var i;
+      function primero(){
+        for (var i = 0; i < 5; i++) {
+          texto += i + "<br>";
+        }
+        document.getElementById('primero').innerHTML = texto;
+      }
+
+    </script>
+
+    <br><hr><br>
+    <button type="button" name="button" onclick="primero">Primera Función</button>
+  </body>
+</html>

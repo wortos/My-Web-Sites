@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Arrays</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="array.html">Arrays</a>
+        | <a href="formulario.html">Formularios</a> |
+    </nav>
+    <article>
+        <h1>Arrays</h1>
+        <p>Debajo de esta línea aparecen datos guardados en un array.</p>
+        <p id="aqui"></p>
+        <script>
+            var guachupita = [12, 23, 34, 45, 56, 67, 78, 89];
+            document.write("<p>" + guachupita.join(" - ") + "</p>");
+            //document.write("<br>");
+            document.write(guachupita[3]);
+            document.write("<br>");
+            document.write(guachupita.length);
+            document.write("<br>");
+            document.write(guachupita[0]);
+            document.write("<br>");
+            document.write(guachupita[guachupita.length - 1]);
+            document.write("<br>");
+            document.write("<hr>");
+            document.write("<br>");
+            var i, largo, texto;
+            largo = guachupita.length;
+            document.write("<ol>");
+            for (i = 0; i < largo; i++) {
+                document.write("<li>" + guachupita[i] + "</li>");
+            }
+            document.write("</ol>");
+            document.write("<br>");
+            function conBoton() {
+                texto = "<ul>";
+                for (i = 0; i < largo; i++) {
+                    texto += "<li>" + guachupita[i] + "</li>";
+                }
+                texto += "</ul>";
+                document.getElementById("aqui").innerHTML = texto;
+            }
+            
+        </script>
+        <button type="button" onclick="conBoton()">Presione aquí</button>
+    </article>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>
+            Copyright
+            <script>
+            var fecha = new Date().getFullYear();
+            document.write(fecha);
+            </script>
+        </p>
+    </footer>
+</body>
+</html>

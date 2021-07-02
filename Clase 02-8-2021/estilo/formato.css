@@ -1,0 +1,90 @@
+body{
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #6BFAEB;
+}
+header {
+  /*background-color: #525AFA;*/
+  min-height: 150px;
+}
+.nombre{
+  width: 70%;
+  float: left;
+  min-height: 150px;
+  border-radius: 10px;
+  background-color: #525AFA;
+  box-shadow: 10px 10px 50px;
+}
+.nombre img {
+  width: 100%;
+}
+.sociales{
+  background-color: grey;
+  width: 25%;
+  float: right;
+  text-align: center;
+  min-height: 130px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: -10px 10px 50px
+}
+
+#izq{
+  margin-top: 10px;
+  float: left;
+  width: 35%;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  min-width: 150px;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;;
+  font-weight: bold;
+
+}
+
+a:hover{
+  color: #FABB5F;
+}
+
+#active{
+  text-shadow: 0px 0px 1px #53ADA4;
+}
+
+li {
+  display: block;
+
+}
+
+section {
+  float: left;
+  width: 55%;
+}
+
+.derecha{
+  float: right;
+  width: 45%;
+}
+.izquierda {
+  float: left;
+  width: 45%;
+}
+.izquierda img{
+  width: 100%;
+  padding: 10px;
+}
+footer{
+  clear: both;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #3136AD;
+  color: white;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}

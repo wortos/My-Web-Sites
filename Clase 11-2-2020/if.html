@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trabajando con IF, Prompt y bucle For/Next</title>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="if.html">Código de IF</a>
+        | <a href="prompt.html">Código Prompt</a>
+        | <a href="bucle.html">Bucle For</a>
+        |
+    </nav>
+    <hr />
+    <p id="aqui"></p>
+    <br />
+    <button type="button" onclick="guachupita()">Presione aquí</button>
+    <script>
+        var edad = 17;
+        function guachupita() {
+            if (edad >= 18) {
+                document.getElementById("aqui").innerHTML = "Usted tiene edad suficiente para votar mañana.";
+            } else if (edad >= 16) {
+                document.getElementById("aqui").innerHTML = "No puedes votar pero puedes tomar el examen de conducir.";
+            } else {
+                    document.getElementById("aqui").innerHTML = "Usted no puede votar en estas elecciones.";
+            }
+                
+            }
+    </script>
+</body>
+</html>

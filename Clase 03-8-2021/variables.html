@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trabajando con variables</title>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="desplegar.html">Mostrando datos</a>
+        | <a href="variables.html">Variables</a>
+        | <a href="funciones.html">Funciones</a> |
+        <br /><hr /><br />
+    </nav>
+    <h1>Debajo verá la utilización de variables para guardar y mostrar datos.</h1>
+
+    <p id="aqui"></p>
+
+    <script>
+        var guachupita, bomba, maracas, guiro;
+        var guitarra = 50;
+        guachupita = "El resultado de la suma es: ";
+        bomba = 25;
+        maracas = 100;
+        guiro = bomba * (maracas + guitarra);
+        document.getElementById('aqui').innerHTML = guachupita + guiro;
+    </script>
+
+    <footer>
+        <h5>Creado por Prof. Ismael González</h5>
+        <h6>&copy; 2021</h6>
+    </footer>
+</body>
+</html>

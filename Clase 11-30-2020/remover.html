@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Remoción</title>
+    <link href="./estilo/StyleSheet.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="efectos.html">Efectos en cadena</a>
+        | <a href="remover.html">Remoción de datos</a>
+        |
+    </nav>
+    <section>
+        <article>
+            <p>Mi primera oración.</p>
+        </article>
+        <article>
+            <p>Mi segunda oración.</p>
+        </article>
+        <article>
+            <p id="tercero">Mi tercera oración</p>
+        </article>
+    </section>
+    <aside>
+        <button type="button" id="remSection">Remover la sección</button>
+        <br />
+        <button type="button" id="empSection">Vaciar la sección</button>
+        <br />
+        <button type="button" id="remP">Remover los párrafos</button>
+        <br />
+        <button type="button" id="remPp">Remover párrafo particular</button>
+        <script>
+            $(document).ready(function () {
+                $("#remSection").click(function () {
+                    //alert("Funciona");
+                    $("section").remove();
+                });
+                $("#empSection").click(function () {
+                    $("section").empty();
+                });
+                $("#remP").click(function () {
+                    //alert("Funciona");
+                    $("p").remove();
+                });
+                $("#remPp").click(function () {
+                    $("p").remove("#tercero");
+                });
+            });
+        </script>
+    </aside>
+
+    <footer>
+        <br /><hr /><br />
+        <h5>Creado por Ismael González</h5>
+        <h5>&copy;2020</h5>
+    </footer>
+</body>
+</html>

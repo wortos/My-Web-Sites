@@ -1,0 +1,29 @@
+body{
+  width: 80%;
+  margin: 0 auto;
+  color: #592A25;
+  background-color: #D7D7D9;
+  font-size: 20px;
+}
+
+span{
+  color: red;
+}
+
+a {
+  color: #8C2730;
+  text-decoration: none;
+}
+
+h1 {
+  color: #D9A13B;
+}
+
+h2 {
+  color: #BF7534;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #D9A13B;
+}

@@ -1,0 +1,36 @@
+﻿body {
+    padding-top:20px;
+    width:80%;
+    margin: 0 auto;
+    background-color:lightgray;
+    color:navy;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    float:left;
+    width:60%;
+}
+
+aside{
+    float:right;
+    width:30%;
+    padding-right:5px;
+    background-color:cornsilk;
+    border-radius:5px;
+    min-height:100px;
+}
+footer{
+    clear:both;
+    width: 90%;
+    text-align:center;
+    font-size:smaller;
+}
+
+nav{
+    font-size: larger;
+}
+
+.escondido {
+    display: none;
+}

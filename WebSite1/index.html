@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Ismael González
+    Mi primer sitio Web en Visual Studio-->
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var miVariable = "Saludos"
+    </script>
+</head>
+<body>
+    <h1>Hola</h1>
+    <p id="aqui"></p>
+    <button type="button" onclick="miFuncion()">Presione esto</button>
+    <script>
+        function miFuncion() {
+            document.getElementById("aqui").innerHTML = miVariable;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trabajando con IF, Prompt y bucle For/Next</title>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a> 
+        | <a href="if.html">Código de IF</a> 
+        | <a href="prompt.html">Código Prompt</a> 
+        | <a href="bucle.html">Bucle For</a> 
+        |
+    </nav>
+    <h1>
+        Bienvenidos a mi sitio Web
+    </h1>
+    <p>Favor de seleccionar la página con el código que desea probar del menú de navegación.</p>
+
+    <input type="checkbox" id="primero" />Esto es bueno
+    
+    <br />
+    <button type="button" onclick="guachupita()">Presione para verificar el ckeckbox</button>
+    <script>
+        function guachupita() {
+            var verifica = document.getElementById("primero").checked;
+            alert("Si dice True es que sí está marcado: " + verifica);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Arrays</title>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="formulario.html">Formularios</a>
+        | <a href="array.html">Array</a> |
+        <hr />
+        <br />
+    </nav>
+    <h1>Debajo los datos de un array</h1>
+    <p>Los datos son: laptop, celular, impresora.</p>
+    <p>para declarar el array se debe utilizar el siguiente código:</p>
+    <blockquote>
+        var nombreArray = [dato0, dato1, dato2,...,datoN];
+    </blockquote>
+    <script>
+        var cosas = ["laptop", "celular", "impresora"];
+        var contenido = " ";
+        function guachupita() {
+            
+            for (i = 0; i < 3; i++) {
+                contenido += "<p>" + cosas[i] + "</p>";
+            }
+
+            document.getElementById("content").innerHTML = contenido;
+        }
+
+        function anadir() {
+            var data, encasillado;
+            data = document.getElementById("dato").value;
+            encasillado = document.getElementById("indice").value;
+            cosas[encasillado] = data;
+        }
+    </script>
+    <br />
+    <button type="button" onclick="guachupita()">Presione para ver los datos</button>
+    <br /><hr /><br />
+    <form>
+        <label>Ingrese el dato a cambiar</label>
+        <input type="text" id="dato" />
+        <br /><br />
+        <label>Ingrese el índice del encasillado</label>
+        <input type="number" id="indice" />
+    </form>
+    <br />
+    <button type="button" onclick="anadir()">Presione para cambiar el dato</button>
+    <br /><br />
+    <div id="content"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+  </head>
+  <body>
+    <h1>Bienvenidos</h1>
+    <p>Esto es un párrafo</p>
+    <p>Esto es otro párrafo</p>
+    <p>Tercer párrafo</p>
+    <script>
+      var variable = "Mucho más.";
+      $(document).ready(function(){
+        $("p").click(function(){
+        $(this).hide();
+        });
+      $(primero).click(function(){
+        $("p").show();
+      })
+      $(segundo).click(function(){
+        $("p").append(" <b>Oración adicional. </b>" + variable);
+      });
+      });
+    </script>
+<button type="button" id="primero">Aquí</button>
+<br> <br>
+<button type="button" id="segundo">Otro botón</button>
+  </body>
+</html>

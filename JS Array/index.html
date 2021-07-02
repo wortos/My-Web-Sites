@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>JavaScript Array</h1>
+
+    <div id="aqui"></div>
+    <button type="button" onclick=mifuncion()>Presione aquí</button>
+
+    <script>
+      function mifuncion(){
+        var nombres = ["Ismael", "Carlos", "Juan"];
+        var listado = "<ul>";
+
+        for (i=0;i<=2;i++) {
+          listado = listado + "<li>" + nombres[i] + "</li>";
+        }
+        listado = listado + "</ul>";
+        document.getElementById("aqui").innerHTML = listado;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Remover</title>
+    <link type="text/css" rel="stylesheet" href="./css/estilo.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="remover.html">Borrar</a> |
+    </nav>
+    <section>
+        <header>
+            <h1>Remoción y borrado de contenido</h1>
+        </header>
+        <article>
+            <p>Aquí trabajaremos con diferentes métodos de eliminación de contenido de HTML.</p>
+            <p>Para mostrar esto, utilizaré una tabla.</p>
+            <hr />
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+                <tr>
+                    <td>Ismael</td>
+                    <td>González</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>López</td>
+                </tr>
+            </table>
+
+        </article>
+    </section>
+    <section>
+        <article>
+            <br /><hr /><br />
+            <p class="animar">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+            <p class="animar">To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.</p>
+            <p class="animar">Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.</p>
+
+        </article>
+    </section>
+    <aside>
+        <button type="button" id="remover">Presione para remover de la tabla</button>
+        <br />
+        <button type="button" id="vaciar">Presione para vaciar la tabla</button>
+        <br />
+        <button type="button" id="remArticulo">Presione para remover el artículo</button>
+        <br />
+        <button type="button" id="vacArticulo">Presione para vaciar el artículo</button>
+        <br />
+        <button type="button" id="restaurar">Presione para restaurar</button>
+        <script>
+            $(document).ready(function () {
+                $("#remover").click(function () {
+                    $("table").remove();
+                })
+                $("#vaciar").click(function () {
+                    $("table").empty();
+                })
+                $("#remArticulo").click(function () {
+                    $("article").remove();
+                })
+                $("#vacArticulo").click(function () {
+                    $("article").empty();
+                })
+                $("#restaurar").click(function () {
+                    //$("td, article").slideDown();
+                    location.reload();
+                })
+            })
+        </script>
+    </aside>
+</body>
+</html>

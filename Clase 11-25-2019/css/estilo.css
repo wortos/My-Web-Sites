@@ -1,0 +1,18 @@
+body{
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 20px;
+}
+
+.derecha {
+  float: right;
+}
+nav {
+  float: left;
+}
+footer{
+  clear: both;
+}
+section{
+  clear: both;
+}

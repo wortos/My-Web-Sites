@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trabajando con IF, Prompt y bucle For/Next</title>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="if.html">Código de IF</a>
+        | <a href="prompt.html">Código Prompt</a>
+        | <a href="bucle.html">Bucle For</a>
+        |
+    </nav>
+
+    <button type="button" onclick="florecita()">Presione aquí</button>
+    <script>
+        function florecita() {
+            var nombre = prompt("Favor de escribir su nombre", "Ismael González");
+            if (nombre == null || nombre == "") {
+                document.getElementById("aqui").innerHTML = "No puede dejar el encasillado en blanco ni presionar la opción para cancelar.";
+            } else {
+                document.getElementById("aqui").innerHTML = "Saludos " + nombre + ". Me alegra que me hallas venido a visitar";
+            }            
+        }
+    </script>
+    <h1 id="aqui"></h1>
+</body>
+</html>

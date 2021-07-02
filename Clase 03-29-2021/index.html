@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a> 
+        | 
+    </nav>
+    <h1>Bienvenido a mi sitio Web</h1>
+    <h2>Favor de llenar el siguiente formulario</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Nombre completo:</label>
+                </td>
+                <td>
+                    <input type="text" id="nombre" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Correo electrónico:</label>
+                </td>
+                <td>
+                    <input type="email" id="correo" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <button type="button" onclick="funValida()">Favor de presionar</button>
+    <script src="valida.js"></script>
+    <script>
+        /*function mifuncion() {
+            //alert("Funciona");
+            var name, email, paragraph;
+            name = document.getElementById("nombre").value;
+            email = document.getElementById("correo").value;
+            //alert(name + " " + email);
+            if (name == "" || email == "") {
+                alert("Favor de no dejar ningun encasillado en blanco.");
+            } else {
+                alert("Usted llenó todos los encasillados. ¡Gracias!");
+                //document.getElementById("aqui").innerHTML = "Saludos " + name + ". Su correo electrónico es " + email + ".";
+                localStorage.setItem("ejemplo", name);
+                window.location.href = "confirmacion.html";
+            }
+        }*/
+    </script>
+    <p id="aqui"></p>
+</body>
+</html>

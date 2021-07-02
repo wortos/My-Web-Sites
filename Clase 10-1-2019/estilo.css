@@ -1,0 +1,29 @@
+﻿body {
+    width: 70%;
+    margin: 0 auto;
+    color: #807D6B;
+    background-color: #FFFBD6;
+}
+section {
+    width: 60%;
+    float: left;
+    background-color: #FFFBD6;
+    min-height: 15px;
+}
+aside {
+    width: 35%;
+    float: left;
+    height: 300px;
+    background-color: #CCC36E;
+    border-radius:15px;
+    margin-left:5px;
+    text-align: center;
+    padding-top: 25px;
+    position:page;
+    top:15px;
+}
+
+article {
+    background-color: #FFF38A;
+    min-height: 15px;
+}

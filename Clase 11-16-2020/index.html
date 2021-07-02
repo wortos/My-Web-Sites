@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <h2>Favor de llenar el formulario que aparece a continuación</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Nombre conpleto:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Correo electrónico:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <button type="button" onclick="miFuncion()">Favor de presionar aquí</button>
+    <script src="valida.js"></script>
+    <script>
+        function miFuncion() {
+            //alert("Estoy aquí.");
+            var nombre, correo;
+            nombre = document.getElementById("name").value;
+            correo = document.getElementById("email").value;
+            //alert("Segundo paso");
+            //alert(nombre);
+            //alert(correo);
+            if (nombre == "" && correo == "") {
+                alert("Favor de no dejar encasillados en blanco.");
+            } else {
+                //document.getElementById("texto").innerHTML = "Usted entró bien los datos.";
+                localStorage.setItem("ejemplo", nombre);
+                window.location.href = "confirmacion.html";
+            }
+        }
+    </script>
+    <p id="texto"></p>
+</body>
+</html>

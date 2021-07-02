@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!--Ismael González, 09-24-2019, PROG2390L-->
+</head>
+<body>
+    <h1>Bienvenidos a mi sitio Web</h1>
+    <p>Primer párrafo.</p>
+    <p>Segundo párrafo.</p>
+    <p>Tercer párrafo.</p>
+    <script>
+        $(document).ready(function () {
+            //código
+            $("p").click(function () {
+                $(this).slideUp();
+            });
+            $("#primero").click(function () {
+                $("p").slideDown();
+            });
+            $("#segundo").click(function () {
+                var nombre = prompt("Escriba su nombre");
+                $("ul").append("<li>" + nombre + "</li>");
+            });
+        });
+    </script>
+    <button type="button" id="primero">Reestablecer párrafos</button>
+    <br />
+    <hr />
+    <br />
+    <h1>Listado</h1>
+    <ul>
+        <li>Juan</li>
+        <li>Pedro</li>
+    </ul>
+    <button type="button" id="segundo">Añadir datos al listado</button>
+    <br /><hr /><br />
+    <table border="1">
+        <tr>
+            <th>Nombre</th><th>Apellido</th>
+        </tr>
+    </table>
+
+</body>
+</html>

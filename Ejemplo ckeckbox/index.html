@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="checkbox" id="verifica" />
+    <br />
+    <input type="checkbox" id="items0" />
+    <br />
+    <input type="checkbox" id="items1" />
+    <br />
+    <input type="checkbox" id="items2" />
+    <p id="demo"></p>
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="mifuncion()">Usando for</button>
+    <p id="total"></p>
+    <script>
+        var items1 = 50, items0 = 100, items2 = 200;
+        var itemTotal;
+        function myFunction() {
+            var x = document.getElementById("verifica").checked;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        function mifuncion() {
+            for (var i = 0; i < 3; i++) {
+                if (items[i].checked) {
+                    itemTotal += (items[i].value * 1);
+                }
+            }
+            document.getElementById("total").innerHTML = "Your order total is $" + itemTotal + ".00";
+        }
+    </script>
+</body>
+</html>

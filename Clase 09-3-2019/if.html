@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>If</title>
+    <link type="text/css" rel="stylesheet" href="estilo/formato.css" />
+    <!--Comentario en HTML-->
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="fechas.html">Fechas</a>
+        | <a href="bucles.html">Bucles</a>
+        | <a href="prompt.html">Prompt</a>
+        | <a href="if.html">If</a> |
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h1>If</h1>
+        <p>Se utiliza cuando se tiene que trabajar con condiciones.</p>
+        <p>Puede contestar preguntas del tipo Cierto/Falso o Sí/No.</p>
+        <p id="aqui"></p>
+        <script>
+            function bucle() {
+                var repetir = prompt("Escriba las veces que desea que se repita el código", 5);
+                if (repetir != "" && repetir != null) {
+                    for (i = 1; i <= repetir; i++) {
+                        //código a repetir
+                        //statement1 - se utiliza para indicar un comienzo
+                        //statement2 - se utiliza para indicar hasta cuando se repetirá
+                        //statement3 - se utiliza utiliza para indicar el número que se le adjudicará al statement1 (Se le conoce como Step)
+                        document.write("<p>Éste código se ha escrito " + i + " veces. </p>");
+                    }
+                } else {
+                    //document.write("<p>No debe dejar el encasillado en blanco.</p>");
+                    document.getElementById("aqui").innerHTML = "No debe dejar el encasillado en blanco.";
+                }
+                
+            }
+            //if(condición){
+            //  código a correr si lo de arriba es cierto
+            //} else {
+            //  código a correr si lo de arriba es falso
+            //}
+        </script>
+        <button type="button" onclick="bucle()">Presione para correr el programa</button>
+    </section>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>Derechos reservados @ 2019</p>
+    </footer>
+</body>
+</html>

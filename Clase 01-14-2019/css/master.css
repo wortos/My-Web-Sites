@@ -1,0 +1,16 @@
+body{
+  width: 80%;
+  padding-top: 20px;
+  margin: 0 auto;
+  background-color: #f7fff7;
+  color: #1a535c;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #ff6b6b;
+}
+
+h3 {
+  color: #4ecdc4;
+}

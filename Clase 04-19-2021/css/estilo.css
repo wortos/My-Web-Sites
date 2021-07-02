@@ -1,0 +1,42 @@
+﻿body {
+    width:80%;
+    margin:0 auto;
+    color:cornsilk;
+    background-color:darkblue;
+}
+a {
+    color:aliceblue;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+a:hover {
+    color:khaki;
+    text-shadow: 0px 0px 10px white;
+}
+
+#nombre {
+    color:lightgreen;
+    font-size: 40px;
+    font-family:Cambria,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#letra {
+    font-size:medium;
+}
+
+#active {
+    text-shadow: 5px 5px 3px honeydew;
+}
+
+#derecha {
+    float:right;
+    background-color:azure;
+    border-radius: 10px;
+    padding:10px;
+}
+
+#reparacion, #mantenimiento {
+    display: none;
+}

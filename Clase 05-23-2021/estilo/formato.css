@@ -1,0 +1,66 @@
+body{
+  color:#75422F;
+  background-color: lightgray;
+  width: 90%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+#nombre {
+  color: #755B52;
+  font-size: 60px;
+}
+header{
+  min-height: 200px;
+}
+.logo{
+  float: left;
+  width: 25%;
+  min-width: 200px;
+  display: block;
+}
+
+.nombre{
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+.redes{
+  float: right;
+  width: 25%;
+  margin-top: 60px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  clear: both;
+}
+nav {
+  font-weight: bold;
+  color: #C26D4E;
+  width: 30%;
+  margin-top: 25px;
+  float: left;
+}
+
+nav a{
+  color: #C26D4E;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li{
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  margin: 5px;
+  box-shadow: -5px 5px 5px;
+}
+
+
+section {
+  float: right;
+  width: 68%;
+}

@@ -1,0 +1,19 @@
+﻿body {
+    width: 80%;
+    margin: 0 auto;
+    color: #456980;
+    background-color: #D6EFFF;
+    margin-top: 30px;
+}
+#nombre {
+    color: #6B7880;
+    font-size:x-large;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+#mantenimiento, #reparacion {
+    display: none;
+}
+
+#derecha {
+    float:right;
+}

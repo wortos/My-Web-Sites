@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link type="text/css" rel="stylesheet" href="./css/estilo.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="remover.html">Borrar</a> |
+    </nav>
+    <section>
+        <header>
+            <h1>Bienvenido a mi sitio Web</h1>
+        </header>
+        <article>
+            <p>Aquí trabajaremos con diferentes efectos con un solo evento en un botón.</p>
+            <p>Para mostrar los efectos utilizaré varios párrafos.</p>
+            <hr />
+            <p class="animar">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+            <p class="animar">To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.</p>
+            <p class="animar">Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.</p>
+
+        </article>
+    </section>
+    <aside>
+        <script>
+            $(document).ready(function () {
+                $("#evento").click(function () {
+                    $(".animar").slideUp(1500).slideDown(1500).fadeOut(1500).fadeIn(1500).slideToggle(1500).slideToggle(1500).slideToggle(1500).slideToggle(1500);
+                })
+            })
+        </script>
+        <button type="button" id="evento">Presione para ejecutar</button>
+    </aside>
+</body>
+</html>

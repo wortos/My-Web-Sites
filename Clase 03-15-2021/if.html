@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>IF</title>
+    <link type="text/css" rel="stylesheet" href="estilo/formato.css" />
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="fechas.html">Fechas</a>
+        | <a href="bucles.html">Bucles</a>
+        | <a href="prompt.html">Prompt</a>
+        | <a href="if.html">If</a> |
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h1>If</h1>
+        <p>Es la última estructura de programación; las decisiones.</p>
+        <script>
+
+            function guchipita() {
+                var repetir = prompt("Escriba cuántas veces quiere que se repita el texto.");
+                if (repetir != "" && repetir != null) {
+                    document.write("<ul>");
+                    for (i = 1; i <= repetir; i++) {
+                        document.write("<li>Se repitió " + i + " veces.</li>");
+                    }
+                    document.write("</ul>");
+                } else {
+                    alert("No debe dejar los encasillados en blanco o presionar el botón de cancelar.");
+                }
+                
+            }
+        </script>
+        <button type="button" onclick="guchipita()">Presione para llamar la función</button>
+    </section>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>Derechos reservados @ 2021</p>
+    </footer>
+</body>
+</html>

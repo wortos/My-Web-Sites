@@ -1,0 +1,13 @@
+body{
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  background-color: grey;
+  font-family: serif;
+  font-size: 20px;
+}
+h1{
+  font-size: 50px;
+  font-family: "Book Antiqua", sans-serif;
+  text-shadow: 10px 10px 10px black;
+}
