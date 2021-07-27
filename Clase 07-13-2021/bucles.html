@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bucles</title>
+    <link type="text/css" rel="stylesheet" href="estilo/formato.css" />
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="fechas.html">Fechas</a>
+        | <a href="bucles.html">Bucles</a>
+        | <a href="prompt.html">Prompt</a>
+        | <a href="if.html">If</a> |
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h1>Bucles</h1>
+        <p>Bucles es como se le llama en Español a los loops.</p>
+        <p>Es un código que se utiliza para repetir datos/información sin tener que escribir código de más.</p>
+        <h2>Bucle For...Next</h2>
+        <script>
+            /*
+             for (statement1; statement2; statement3){
+                1 - se utiliza para indicar el comienzo del contador de las repeticiones
+                2 - se utiliza para indicar las veces que se repetirá el código
+                3 - se conoce como el "Step". Indica el número por el cual sube el contador cada vez que se hace un ciclo
+             }
+             */
+            document.write("<ol>");
+            for (i = 0; i <= 100; i = i + 5) {
+                document.write("<li>Este código se ha repetido " + i + " veces.</li>");
+            }
+            document.write("</ol>");
+        </script>
+    </section>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>Derechos reservados &copy;2021</p>
+    </footer>
+</body>
+</html>

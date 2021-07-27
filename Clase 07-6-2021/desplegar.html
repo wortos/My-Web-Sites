@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mostrando datos</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="desplegar.html">Mostrando datos</a> |
+        <a href="variables.html">Variables</a> |
+        <a href="funciones.html">Funciones</a>
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h2>Debajo de esta línea, encontrará datos mostrados con Javascript.</h2>
+        <p id="guachupita"></p>
+        <script>
+            alert("¡Bienvenido a mi sitio Web!"); //Esto es una alerta al usuario
+            //alert(100);
+            /*Esto es un comentario
+            que ocupa más de una línea*/
+            document.write("Esta oración está <i>escrita</i> dentro de <b>JavaScript</b>.");
+            document.getElementById("guachupita").innerHTML = "El profesor de la clase es Ismael González.";
+            document.write("<br>");
+            document.write("El resultado es " + 2 * 6);
+        </script>
+    </section>
+    <footer>
+        <br /><hr />
+        <p>Creado por Ismael González &copy;2021</p>
+    </footer>
+</body>
+</html>

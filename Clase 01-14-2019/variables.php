@@ -11,9 +11,9 @@
     <br><hr><br>
     <?php
       $fatmagul = "Esto es un dato del tipo texto."
-      $fatMagul = 789456
-      echo "Cuando Fatmagul se escribe en minúscula, se ve: ", $fatmagul;
-      echo "Cuando fatmagul tiene una letra en mayúscula, se ve: ", $fatMagul;
+      $Fatmagul = 789456
+      echo "Cuando fatmagul se escribe en minúscula, se ve: ", $fatmagul;
+      echo "Cuando Fatmagul tiene una letra en mayúscula, se ve: ", $Fatmagul;
      ?>
   </body>
 </html>

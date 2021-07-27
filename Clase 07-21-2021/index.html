@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Obtner datos del usuario con un formulario</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Escriba su nombre:</label>
+                </td>
+                <td>
+                    <input type="text" id="nombre" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Escriba su apellido:</label>
+                </td>
+                <td>
+                    <input type="text" id="apellido" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <button type="button" onclick="saludos()">Presione aquí</button>
+    <script>
+        function saludos() {
+            var primero, segundo;
+            primero = document.getElementById("nombre").value;
+            segundo = document.getElementById("apellido").value;
+            //alert(primero + " " + segundo);
+            document.write("<h1>Confirmación</h1>");
+            document.write("<p>Gracias por completar el formulario.</p>");
+            document.write("<p>Su nombre es " + segundo + ", " + primero + ".</p>");
+        }
+
+    </script>
+    <br /> <br /><hr /><br />
+    <h1>Trabajando con números dentro de un formulario</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Escriba el primer número:</label>
+                </td>
+                <td>
+                    <input type="number" id="num1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Escriba el segundo número:</label>
+                </td>
+                <td>
+                    <input type="number" id="num2" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <button type="button" onclick="operacion()">Presione aquí</button>
+    <script>
+        function operacion() {
+            var num1, num2, resultado;
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
+            resultado = num1 + num2;
+            //alert(resultado);
+            document.getElementById("aqui").innerHTML = "El resultado de la suma es: " + resultado;
+        }
+    </script>
+    <p id="aqui"></p>
+
+    <br /><hr /><br />
+    <h1>Array</h1>
+    <p>Un array es la evolución de las variables pues me permiten guardan más de un dato, de un mismo tipo, en un momento dado.</p>
+    <p>Hay que recordar que las variables solo te permiten un solo dato de un tipo en un momento dado.</p>
+    <script>
+        /*
+        var nombreArray = [item1, item2, item3,...,itemN];
+                           0         1        2          3        4*/
+        var nombres = ["Ismael", "Jorge", "Jonathan", "Juan", "Jessica"];
+        //Para mostrar los datos dentro del array
+        document.write(nombres);
+        document.write("<br>");
+        var junto = nombres.join(", ");
+        document.write(junto);
+        document.write("<p>Para mostrar solo un dato</p>");
+        var guachupita = 3;
+        document.write(nombres[guachupita]);
+        document.write("<p>Para mostrar los datos en un listado utilizando join</p>");
+        document.write("<ol><li>");
+        var conListado = nombres.join("</li><li>");
+        document.write(conListado);
+        document.write("</li></ol>");
+
+        /*
+         Bucles For
+         for(statement1; statement2; statement3){
+                código a repetir;
+            }
+            */
+        function mifuncion() {
+            for (i = 0; i < 5; i++) {
+                alert(nombres[i]);
+            }
+        }
+    </script>
+    <h1>Para utilizar bucles con el array</h1>
+    <button type="button" onclick="mifuncion()">Presione para ver los datos</button>
+    <br />
+    <h1>Para mostrar un dato en particular</h1>
+    <script>
+        function particular() {
+            var elemento = parseInt(prompt("Indique el número del dato que quiere ver:"));
+            document.getElementById("aca").innerHTML = "El dato guardado en ése índice es: " + nombres[elemento - 1];
+        }
+    </script>
+    <button type="button" onclick="particular()">Presione para seleccionar un elemento particular del array</button>
+    <p id="aca"></p>
+    <hr />
+    <br />
+    <h2>El tamaño del array es:</h2>
+    <script>document.write(nombres.length);</script>
+</body>
+</html>

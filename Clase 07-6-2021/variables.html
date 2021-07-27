@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Variables</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="desplegar.html">Mostrando datos</a> |
+        <a href="variables.html">Variables</a> |
+        <a href="funciones.html">Funciones</a>
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h2>Debajo de esta línea verá la utilización de variables</h2>
+        <p id="grillo"></p>
+
+        <script>
+            var num1;
+            num1 = 50;
+            var num2 = 100;
+            var resultado, num3;
+            num3 = 25;
+            resultado = num1 * (num2 + num3);
+            var pandereta = "El resultado de la operación matemática es: ";
+            document.getElementById("grillo").innerHTML = pandereta + resultado;
+
+        </script>
+    </section>
+    <footer>
+        <br /><hr />
+        <p>Creado por Ismael González &copy;2021</p>
+    </footer>
+</body>
+</html>

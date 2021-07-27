@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fechas</title>
+    <link type="text/css" rel="stylesheet" href="estilo/formato.css" />
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="fechas.html">Fechas</a>
+        | <a href="bucles.html">Bucles</a>
+        | <a href="prompt.html">Prompt</a>
+        | <a href="if.html">If</a> |
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h1>Fechas con JavaScript</h1>
+        <h3>Para ver la fecha y hora, se utiliza el código Date()</h3>
+        <script>
+            var fecha_y_hora = new Date();
+            document.write(fecha_y_hora);
+            var dia = new Date().getDate(); //Se puede hacer diferente, sin una nueva variable
+            document.write("<p>" + dia + "</p>");
+            document.write("<p>" + fecha_y_hora.getDate() + "</p>");
+        </script>
+    </section>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>Derechos reservados &copy;2021</p>
+    </footer>
+</body>
+</html>

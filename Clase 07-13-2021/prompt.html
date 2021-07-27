@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Prompt</title>
+    <link type="text/css" rel="stylesheet" href="estilo/formato.css" />
+</head>
+<body>
+    <nav>
+        | <a href="index.html">Inicio</a>
+        | <a href="fechas.html">Fechas</a>
+        | <a href="bucles.html">Bucles</a>
+        | <a href="prompt.html">Prompt</a>
+        | <a href="if.html">If</a> |
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h1>Prompt</h1>
+        <p>Es el opuesto del alert().</p>
+        <script>
+            /*var nombre = prompt("Favor de indicar su nombre:");
+            document.write("<p>Saludos " + nombre + ".</p>");*/
+            var repetir = prompt("Favor de indicar cuántas veces se repetirá el código:");
+            document.write("<ol>");
+            for (i = 1; i <= repetir; i++) {
+                document.write("<li>Este código se ha repetido " + i + " veces.</li>");
+            }
+            document.write("</ol>");
+        </script>
+    </section>
+    <footer>
+        <br /><hr /><br />
+        <p>Creado por Ismael González</p>
+        <p>Derechos reservados &copy;2021</p>
+    </footer>
+</body>
+</html>

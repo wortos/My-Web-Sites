@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        function TheRock() {
+            var num1, num2, resultado;
+            num1 = 16;
+            num2 = 58;
+            resultado = num2 + num1;
+            document.getElementById("aqui").innerHTML = "El resultado es: " + resultado;
+            
+        }
+        function StoneCold() {
+            var num1, num2, resultado;
+            num1 = 16;
+            num2 = 58;
+            resultado = num2 + num1;
+            document.write("| <a href = 'index.html'> Inicio</a> |");
+            document.write("<h2>¡Gracias por presionar el bótón!</h2>");
+            document.write("El resultado es: " + resultado);
+        }
+    </script>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="desplegar.html">Mostrando datos</a> |
+        <a href="variables.html">Variables</a> |
+        <a href="funciones.html">Funciones</a>
+        <br /><hr /><br />
+    </nav>
+    <section>
+        <h2>Debajo podrá ver funciones en acción</h2>
+        <h3>Favor de presionar los botones para sumar dos datos</h3>
+        <p id="aqui"></p>
+        <br />
+        <button type="button" onclick="TheRock()">Presione para utilizar innerHTML</button>
+        <br />
+        <button type="button" onclick="StoneCold()">Presione para utilizar Document.Write</button>
+    </section>
+    <footer>
+        <br /><hr />
+        <p>Creado por Ismael González &copy;2021</p>
+    </footer>
+</body>
+</html>
